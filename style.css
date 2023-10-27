@@ -1,0 +1,55 @@
+header {
+  text-align: center;
+}
+
+body {
+  line-height: 20px;
+  background-color: coral;
+}
+
+main {
+  background-color: #eee;
+  padding: 20px;
+  margin: 4rem 6rem;
+}
+
+main p {
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.slide-in {
+  opacity: 0;
+}
+
+.left-slide-in {
+  transform: translateX(-35%) scale(0.95);
+  transition: all 0.5s;
+}
+
+.right-slide-in {
+  transform: translateX(35%) scale(0.95);
+  transition: all 0.5s;
+}
+
+/* When slider is active */
+.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
+@media screen and (max-width: 768px) {
+  main p {
+    display: block;
+  }
+
+  main {
+    margin: 2rem;
+  }
+}
